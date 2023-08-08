@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+header .menuResponsive {
+  background-color: #AE9A64;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid #333332;
+}
+header .menuResponsive .logInLink img {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 0.625rem;
+}
+header .menuResponsive .burguer {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 0.625rem;
+}
+header .navBar {
+  display: none;
+  background-color: #AE9A64;
+  padding: 0.625rem;
+  width: 100vw;
+}
+header .navBar ul {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+header .navBar ul li a {
+  text-decoration: none;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+header .navBar ul .btnOnlineResponsive {
+  width: 12.5rem;
+  height: 3.125rem;
+  font-family: "Alfa Slab One", cursive;
+  color: #AE9A64;
+  background-color: #333332;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem black;
+  border: none;
+  border-radius: 0.1875rem;
+}
+header .btnOnline {
+  display: none;
+}
+header a .logIn {
+  display: none;
+}
+
+main .mainSection {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../assets/img/mainBackground.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 2fr 2fr 1fr;
+}
+main .mainSection h1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: flex-end;
+  font-size: 3rem;
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+main .mainSection p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 1.5625rem;
+  color: white;
+  justify-self: center;
+  font-family: "Oswald", sans-serif;
+}
+main .mainSection .btnOnlineMainSection {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: flex-start;
+  width: 12.5rem;
+  height: 3.125rem;
+  font-family: "Alfa Slab One", cursive;
+  color: #333332;
+  background-color: #AE9A64;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem black;
+  border: none;
+  border-radius: 0.1875rem;
+}
+main .ourHome .comida {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5625rem;
+  gap: 1.875rem;
+  background-image: linear-gradient(to right, rgba(174, 154, 100, 0.7), rgba(174, 154, 100, 0.7)), url(../assets/img/iulia-buta-8GNkoWJTchc-unsplash.jpg);
+  background-size: cover;
+}
+main .ourHome .comida img {
+  width: 5.3125rem;
+  height: 5.3125rem;
+}
+main .ourHome .comida p {
+  text-align: center;
+  font-size: 1.375rem;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+main .ourHome .vacas {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5625rem;
+  gap: 1.875rem;
+  background-image: linear-gradient(to right, rgba(51, 51, 50, 0.7), rgba(51, 51, 50, 0.7)), url(../assets/img/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg);
+  background-size: cover;
+}
+main .ourHome .vacas img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+main .ourHome .vacas p {
+  text-align: center;
+  font-size: 1.375rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+main .ourHome .celular {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5625rem;
+  gap: 1.875rem;
+  background-image: linear-gradient(to right, rgba(174, 154, 100, 0.7), rgba(174, 154, 100, 0.7)), url(../assets/img/claudio-schwarz-4H9xt2DNgNc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main .ourHome .celular img {
+  width: 5.3125rem;
+  height: 5.3125rem;
+}
+main .ourHome .celular p {
+  text-align: center;
+  font-size: 1.375rem;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+main .Reservas {
+  height: 80vh;
+  padding: 1.25rem;
+  background-color: #AE9A64;
+}
+main .Reservas .formReserva {
+  height: 100%;
+  background-color: #AE9A64;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #333332;
+}
+main .Reservas .formReserva h2 {
+  font-size: 2rem;
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-weight: 100;
+}
+main .Reservas .formReserva .inputs {
+  height: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .Reservas .formReserva .inputs .inputCantidad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+main .Reservas .formReserva .inputs .inputCantidad label {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+main .Reservas .formReserva .inputs .inputCantidad input {
+  background-color: #333332;
+  width: 18.75rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+}
+main .Reservas .formReserva .inputs .inputFecha {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+main .Reservas .formReserva .inputs .inputFecha label {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+main .Reservas .formReserva .inputs .inputFecha input {
+  background-color: #333332;
+  width: 18.75rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+}
+main .Reservas .formReserva .inputs .horario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+main .Reservas .formReserva .inputs .horario label {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+main .Reservas .formReserva .inputs .horario input {
+  background-color: #333332;
+  width: 18.75rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+}
+main .Reservas .formReserva .btnReservar {
+  width: 11.25rem;
+  height: 2.5rem;
+  background-color: #333332;
+  color: #AE9A64;
+  border: none;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem black;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.375rem;
+  font-weight: 100;
+}
+
+footer {
+  background-color: #333332;
+  padding: 2.1875rem;
+}
+footer h2 {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 100;
+}
+footer p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5625rem;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1.5625rem;
+  margin-bottom: 5.3125rem;
+}
+footer form label {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.375rem;
+  font-weight: 100;
+  color: white;
+}
+footer form input {
+  width: 15.625rem;
+  height: 2.5rem;
+  background-color: #333332;
+  border: 0.1875rem solid #AE9A64;
+}
+footer form textarea {
+  width: 15.625rem;
+  max-height: 9.375rem;
+  background-color: #333332;
+  border: 0.1875rem solid #AE9A64;
+}
+footer form .btnEnviar {
+  width: 9.375rem;
+  height: 2.5rem;
+  background-color: #AE9A64;
+  color: #333332;
+  font-family: "Alfa Slab One", cursive;
+  border: none;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem black;
+  text-align: center;
+}
+footer .direccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  margin-bottom: 5.3125rem;
+}
+footer .direccion p {
+  font-size: 1.125rem;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+footer .maps {
+  width: 100%;
+  height: 14.0625rem;
+  margin-bottom: 5.3125rem;
+}
+footer .maps iframe {
+  width: 100%;
+  height: 100%;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5625rem;
+  margin-bottom: 5.3125rem;
+}
+footer .redes img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+footer .listas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5.3125rem;
+}
+footer .listas ul {
+  list-style: none;
+}
+footer .listas ul li {
+  margin: 0.125rem;
+}
+footer .listas ul li a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+  color: white;
+}
+footer .linea {
+  height: 0.125rem;
+  background-color: #AE9A64;
+  width: 100%;
+  margin-bottom: 1.875rem;
+}
+footer .priv {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

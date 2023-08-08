@@ -1,0 +1,399 @@
+$color1 : #AE9A64 ;
+$color2 : #333332;
+$titulo : 'Alfa Slab One', cursive;
+$parrafo : 'Oswald', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    .menuResponsive {
+        background-color: $color1;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: .0625rem solid $color2;
+        .logInLink {
+            img {
+                width: 3.75rem;
+                height: 3.75rem;
+                margin: .625rem;
+            }
+        }
+        .burguer {
+            width: 3.75rem;
+            height: 3.75rem;
+            margin: .625rem;
+        }
+    }
+    .navBar {
+        display: none;
+        background-color: $color1;
+        padding: .625rem;
+        width: 100vw;
+        ul {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: $titulo;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+            .btnOnlineResponsive{ 
+                width: 12.5rem;
+                height: 3.125rem;
+                font-family: $titulo;
+                color: $color1;
+                background-color: $color2;
+                box-shadow: .3125rem .3125rem .625rem black;
+                border: none;
+                border-radius: .1875rem;
+            }
+        }
+    }
+    .btnOnline {
+        display: none;
+    }
+    
+    a {
+        .logIn {
+            display: none;
+        }
+    }    
+}
+main {
+    .mainSection{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.8)),url(../assets/img/mainBackground.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 20% 60% 20% ;
+        grid-template-rows: 2fr 2fr 1fr;
+        h1 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: center;
+            align-self: flex-end;
+            font-size: 3rem;
+            font-family: $titulo;
+            color: white;
+            font-weight: 100;
+            text-align: center;
+        }
+        p {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            font-size: 1.5625rem;
+            color: white;
+            justify-self: center;
+            font-family: $parrafo;
+            
+        }
+        .btnOnlineMainSection{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            justify-self: center;
+            align-self: flex-start;
+            width: 12.5rem;
+            height: 3.125rem;
+            font-family: $titulo;
+            color: $color2;
+            background-color: $color1;
+            box-shadow: .3125rem .3125rem .625rem black;
+            border: none;
+            border-radius: .1875rem;
+        }
+    }
+    .ourHome {
+        .comida {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5625rem;
+            gap: 1.875rem;
+            background-image: linear-gradient(to right,rgba(174,154,100,0.7),rgba(174,154,100,0.7)) , url(../assets/img/iulia-buta-8GNkoWJTchc-unsplash.jpg);
+            background-size: cover;
+            img {
+                width: 5.3125rem;
+                height: 5.3125rem;
+            }
+            p {
+                text-align: center;
+                font-size: 1.375rem;
+                color: black;
+                font-family: $parrafo;
+            }
+        }
+        .vacas {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5625rem;
+            gap: 1.875rem;
+            background-image: linear-gradient(to right,rgba(51,51,50,0.7),rgba(51,51,50,0.7)) , url(../assets/img/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg);
+            background-size: cover;
+            img {
+                width: 6.25rem;
+                height: 6.25rem;
+            }
+            p {
+                text-align: center;
+                font-size: 1.375rem;
+                color: white;
+                font-family: $parrafo;
+            }
+        }
+        .celular {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5625rem;
+            gap: 1.875rem;
+            background-image: linear-gradient(to right,rgba(174,154,100,0.7),rgba(174,154,100,0.7)) , url(../assets/img/claudio-schwarz-4H9xt2DNgNc-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            img {
+                width: 5.3125rem;
+                height: 5.3125rem;
+            }
+            p {
+                text-align: center;
+                font-size: 1.375rem;
+                color: black;
+                font-family: $parrafo;
+            }
+        }
+    }
+    .Reservas {
+        height: 80vh;
+        padding: 1.25rem;
+        background-color: $color1;
+        .formReserva {
+            height: 100%;
+            background-color: $color1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: .9375rem;
+            border: .0625rem solid $color2;
+            h2 {
+                font-size: 2rem;
+                font-family: $titulo;
+                color: white;
+                font-weight: 100;
+            }
+            .inputs {
+                height: 18.75rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                .inputCantidad {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                    label {
+                        font-family: $titulo;
+                        color: white;
+                        font-size: 1.25rem;
+                        font-weight: 100;
+                    }
+                    input {
+                        background-color: $color2;
+                        width: 18.75rem;
+                        height: 2.5rem;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .inputFecha{ 
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                    label {
+                        font-family: $titulo;
+                        color: white;
+                        font-size: 1.25rem;
+                        font-weight: 100;
+                    }
+                    input {
+                        background-color: $color2;
+                        width: 18.75rem;
+                        height: 2.5rem;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .horario {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                    label {
+                        font-family: $titulo;
+                        color: white;
+                        font-size: 1.25rem;
+                        font-weight: 100;
+                    }
+                    input {
+                        background-color: $color2;
+                        width: 18.75rem;
+                        height: 2.5rem;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+            .btnReservar {
+                width: 11.25rem;
+                height: 2.5rem;
+                background-color: $color2;
+                color: $color1;
+                border: none;
+                box-shadow: .3125rem .3125rem .3125rem black;
+                font-family: $titulo;
+                font-size: 1.375rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+footer {
+    background-color: $color2;
+    padding: 2.1875rem;
+    h2 {
+        font-family: $titulo;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 100;
+    }
+    p{
+        font-family: $parrafo;
+        font-size: 1.25rem;
+        text-align: center;
+        color: white;
+        margin-bottom: 1.5625rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1.5625rem;
+        margin-bottom: 5.3125rem;
+        label {
+            font-family: $titulo;
+            font-size: 1.375rem;
+            font-weight: 100;
+            color: white;
+        }
+        input {
+            width: 15.625rem;
+            height: 2.5rem;
+            background-color: $color2;
+            border: .1875rem solid $color1;
+        }
+        textarea {
+            width: 15.625rem;
+            max-height: 9.375rem;
+            background-color: $color2;
+            border: .1875rem solid $color1;
+        }
+        .btnEnviar{
+            width: 9.375rem;
+            height: 2.5rem;
+            background-color: #AE9A64;
+            color: #333332;
+            font-family: $titulo;
+            border: none;
+            box-shadow: .3125rem .3125rem .3125rem black;
+            text-align: center;
+        }
+
+    }
+    .direccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3125rem;
+        margin-bottom: 5.3125rem;
+        p {
+            font-size: 1.125rem;
+            font-family: $parrafo;
+            text-align: center;
+        }
+    }
+    .maps {
+        width: 100%;
+        height: 14.0625rem;
+        margin-bottom: 5.3125rem;
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5625rem;
+        margin-bottom: 5.3125rem;
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+    .listas {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 5.3125rem;
+        ul {
+            list-style: none;
+            li {
+                margin: .125rem;
+                a{
+                    text-decoration: none;
+                    font-family: $parrafo;
+                    font-size: 1.125rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    .linea{ 
+        height: .125rem;
+        background-color: $color1;
+        width: 100%;
+        margin-bottom: 1.875rem;
+    }
+    .priv {
+        font-family: $parrafo;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
